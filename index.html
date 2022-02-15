@@ -287,20 +287,28 @@ font-family:Montserrat-regular;
               position:relative;
           }
           
-           /* .count-head::after {
-            content: '';
+           .count-head::after {
+            position:absolute;
+             content:"";
+            /* height:2px; */
+             width:50%;
+             left:50%;
+             transform:translate(-50%);
+             border-bottom:2px solid #F58025;
+             top:80px;
+              border-radius:8px;
+            /* content: '';
             position: absolute;
-            top:80%;
-            left:20px;
-            right:0px;
-            border-bottom:2px solid #F58025;
-            width: 50%;
-           opacity:0;
+              top:80%;
+            left:0px;
+            border-bottom:4px solid #F58025;
+             width: 200px;  */
+          
            
         }
-        .count-head:hover.count-head::after{
-            opacity:1;
-        } */
+        /* .count-head:hover.count-head::after{
+           
+        } */ 
         @media only screen and (min-width:320px) and (max-width:768px) {
     .card-heading{
         font-size: 20px;
@@ -335,6 +343,22 @@ font-family:Montserrat-regular;
         background-image:url("map.png") ;
         background-size:cover;
     }
+    .biggerpicture-heading {
+        position:relative;
+    }
+    .biggerpicture-heading::after{
+        position:absolute;
+             content:"";
+            /* height:2px; */
+             width:30%;
+             left:50%;
+             transform:translate(-50%);
+             border-bottom:2px solid #F58025;
+             top:60px;
+              border-radius:8px;
+
+    }
+
     .bigger-card{
         width:300px;
         height:250px;
@@ -530,12 +554,12 @@ font-family:Montserrat-regular;
     left:0;
     border-bottom:2px solid #F58025;
     width:105px;
-    opacity:0;
+    /* opacity:0; */
    
 }
-.footer-title:hover.footer-title::after{
+/* .footer-title:hover.footer-title::after{
     opacity:1;
-}
+} */
 
 
 .footer-para{
@@ -993,7 +1017,7 @@ div .icon+.icon{
 
 
 
-            <footer>
+           
               <footer class="footer-section ">
                   <div class="footer-part pt-5">
               <div class="container">
