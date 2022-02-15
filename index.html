@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="Montserrat">
+        <link rel="stylesheet" href="Poppins">
+        </head>
+        <style>
+          @font-face {
+    font-family: MontBold;
+    src: url(Montserrat\static\Montserrat-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MontReg;
+    src: url(Montserrat\static\Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: MontMed;
+    src: url('Montserrat\static\Montserrat-Medium.ttf');
+} 
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("header-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navContainer{
+    background-color: #0000005c;
+}
+/* .navContainer .container{
+    padding-left: 5%;
+    padding-right: 5%;
+} */
+.navvmx-heading{
+    
+font-family:Montserrat-regular;
+    font-size:24px;
+    color:#F58025;
+    font-weight:bold;
+}
+
+
+
+
+.navbar-toggler-icon{
+    color: orange;
+}
+.nav-link1,.nav-link2,.nav-link3,.nav-link4,.nav-link5{
+    color:white;
+    font-family: Montserrat-regular;
+    font-size:20px;
+    padding:10px;
+}
+
+
+.banner-title{
+    color:#ffffff;
+    font-family:Montserrat-regular;
+    font-size:22px;
+    /* margin-bottom:23px; */
+}
+.banner-subtitle{
+    color:#ffffff;
+    font-family:Montserrat-bold;
+    font-size:45px;
+    /* margin-bottom:30px; */
+}
+.banner-btn{
+    border:1px solid #F58025;
+    border-radius:50px;
+    background:transparent;
+    font-family: Montserrat-medium;
+    font-size:20px;
+    color:#ffffff;
+    padding:12px 38px;
+    outline:none;
+}
+.banner-content{
+    margin-top:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+@media (max-width: 425px) {
+    /* .bannerText{
+        width: 80%;
+    } */
+
+    .banner-title{
+        font-family: MontReg;
+        font-size: 14px;
+    }
+    
+    .banner-subtitle{
+        font-family: MontBold;
+        font-size: 22px;
+    }
+    .banner-btn{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    /* .bannerText{
+        width: 50%;
+    } */
+    .banner-title{
+        font-size: 14px;
+    }
+    .banner-subtitle{
+        font-size: 22px;
+    }
+    .banner-btn{
+        font-size: 18px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    /* .bannerText{
+        width: 45%;
+    } */
+    .banner-title{
+        font-size: 14px;
+    }
+    .banner-subtitle{
+        font-size: 32px;
+    }
+}
+
+.tab-heading{
+           font-family:Montserrat;
+           font-size:40px;
+           color:#2D2D2D;
+       }
+       .tab-paragraph{
+        font-family:Montserrat;
+           font-size:20px;
+           color:#494949;
+       }
+       .infra-image{
+           width:60px;
+           height:50px;
+       }
+
+       @media (min-width: 320px) and (max-width: 568px){
+        .tab-heading{
+           font-size:20px;
+           color:#2D2D2D;
+       }
+
+       .tab-paragraph{
+        font-size:15px;
+        color:#494949;
+       }
+
+
+       }
+       /* @media (min-width: 768px) and (max-width: 998px){
+        .tab-heading{
+           font-size:20px;
+           color:#2D2D2D;
+       }
+
+       .tab-paragraph{
+        font-size:15px;
+        color:#494949;
+       } */
+
+
+
+       }
+
+.links-tabs{
+    margin-top: 40px;
+}
+.links-tabs .container{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.links-tabs .nav-tabs{
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+
+
+ .links-tabs .nav-item{
+    
+    border-bottom: 1px solid grey;
+}
+.links-tabs .nav-item a.active{
+    border-bottom: 1px solid grey;
+} 
+
+
+/* active link */
+.links-tabs .nav-item a.active{
+    color: #F58025;
+    font-family: MontMed;
+    font-size: 20px;
+}
+
+  
+
+/* Inactive link */
+.links-tabs .nav-item a{
+    color: #494949;
+    font-family: MontMed;
+    font-size: 20px;
+}
+
+
+.links-tabs .nav-link{
+    border: none;
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: none;
+}
+
+ .Box{
+    width: 280px;
+ }
+
+
+        
+          
+          .card{
+            background-color:white;
+            width:572px;
+            height:310px;
+          }
+          .imagetags{
+            /* display:flex;
+            flex:row;
+            justify-content:center;
+            align-items:center; */
+            width:100px;
+             height:100px;  
+            /* padding-top:20px; */
+            /* padding-top:40px; */
+
+          }
+          /* .box-shadow{
+              border-color:#000000;
+          } */
+
+          .card-section2{
+              
+             background-color:#FFFFFF;
+          }
+          .card-heading{
+            font-family:Montserrat;
+            font-size:26px;
+            
+           
+
+          }
+          .card-paragraph{
+            font-family:Montserrat;
+            font-size:20px;
+           
+          }
+          .count-head{
+              font-family:Montserrat;
+              font-weight:bold;
+              font-size:50px;
+              position:relative;
+          }
+          
+           /* .count-head::after {
+            content: '';
+            position: absolute;
+            top:80%;
+            left:20px;
+            right:0px;
+            border-bottom:2px solid #F58025;
+            width: 50%;
+           opacity:0;
+           
+        }
+        .count-head:hover.count-head::after{
+            opacity:1;
+        } */
+        @media only screen and (min-width:320px) and (max-width:768px) {
+    .card-heading{
+        font-size: 20px;
+
+    }
+    .card-paragraph{
+        font-size: 14px;
+    }
+    .count-head{
+        font-size:30px;
+             
+          }
+          
+}
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    .card-heading{
+        font-size: 24px;
+        padding: 0px;
+
+    }
+    .card-paragraph{
+        font-size: 14px;
+        padding: 0px;
+    }
+    .count-head{
+        font-size:40px;
+             
+          }
+} 
+
+.biggerpic-section{
+        background-image:url("map.png") ;
+        background-size:cover;
+    }
+    .bigger-card{
+        width:300px;
+        height:250px;
+       background-color:#FFFFFF;
+       
+      
+    }
+   
+    /* .number{
+   text-align:center;
+} */
+.number-txt{
+      font-family:Poppins;
+        font-size:100px;
+         color:#F58025;
+          padding-left:80px; 
+}
+    /* .bigger-no{
+        font-family:Poppins;
+        font-size:100px;
+        color:#F58025;
+       
+    } */
+    .biggertitle{
+        font-family:Poppins;
+        font-size:25px;
+        color:#001245;
+    }
+    .picturehead2{
+        font-family:Montserrat;
+        font-weight:bold;
+        font-size:25px;
+        color:#2D2D2D;
+
+    }
+    .picturepara{
+        font-family:Montserrat;
+        font-size:18px;
+        color:#000000;
+
+    }
+    @media (min-width: 320px) and (max-width: 568px){
+
+
+  
+    .bigger-card{
+        width:250px;
+        height:250px;
+       background-color:#FFFFFF;
+       
+      
+    } 
+    .number-txt{
+      font-size:80px;
+         color:#F58025;
+         padding-left:60px; 
+}
+.biggertitle{
+        font-family:Poppins;
+        font-size:20px;
+        color:#001245;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    /* .bannerText{
+        width: 45%;
+    } */
+    .bigger-card{
+        width:250px;
+        height:250px;
+       background-color:#FFFFFF;
+       
+      
+    } 
+    .number-txt{
+      font-size:80px;
+         color:#F58025;
+         padding-left:60px; 
+}
+.biggertitle{
+        font-family:Poppins;
+        font-size:20px;
+        color:#001245;
+    }
+    .picturehead2{
+      font-size:20px;
+       
+
+    }
+    .picturepara{
+       
+        font-size:14px;
+       
+
+    }
+}
+    
+
+
+    /* .picturecard{
+        margin-left:200px;
+        padding-left:200px;
+    } */
+    .speed-heading{
+        font-family:Montserrat;
+        font-weight:bold;
+        font-size:40px;
+        color:#FFFFFF;
+       
+    }
+    .speed-card{
+        background-image:url("Mask Group 4.png");
+        background-size:cover;
+       
+        /* padding:30px;
+        padding-left:100px; */
+
+       
+        
+
+    }
+    .speed-textpart{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+         padding:20px; 
+        }
+    .btn-book{
+        background-color:#F58025;
+        color:#FFFFFF;
+         border:2px solid #F58025; 
+        border-radius:15px ;
+       
+    }
+
+    @media (min-width: 320px) and (max-width: 568px){
+    /* .bannerText{
+        width: 50%;
+    } */
+    .speed-heading{
+       
+        font-weight:bold;
+        font-size:10px;
+        color:#FFFFFF;
+    }
+   
+    
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    /* .bannerText{
+        width: 45%;
+    } */
+    .speed-heading{
+       
+       font-weight:bold;
+       font-size:20px;
+       color:#FFFFFF;
+   }
+}
+    
+
+
+
+
+
+
+        .footer-part{
+        display:flex;
+      justify-content:space-around;  
+      background-color:#000A2D;
+   
+    }
+      
+    
+.footer-title{
+    font-family:Montserrat;
+    font-size:18px;
+    color:#BDBFC9; 
+    position:relative;
+}
+.footer-title1{
+    font-family:Montserrat;
+    font-size:18px;
+    color:#F58025; 
+    
+}
+.footer-title::after{
+    position:absolute;
+    content:"";
+    top:50%;
+    left:0;
+    border-bottom:2px solid #F58025;
+    width:105px;
+    opacity:0;
+   
+}
+.footer-title:hover.footer-title::after{
+    opacity:1;
+}
+
+
+.footer-para{
+    font-family:Montserrat;
+    font-size:18px;
+    color:#BDBFC9; 
+}
+.address{
+    font-family:Montserrat;
+    font-size:18px;
+    color:#BDBFC9; 
+}
+
+
+
+
+
+.list-container{
+    list-style-type: none;
+    padding-left:0;
+
+}
+.links{
+    font-family:Montserrat;
+    font-size:18px;
+    color:#BDBFC9; 
+}
+.contacts-para{
+  
+    font-family:Montserrat;
+    font-size:18px;
+    color:#BDBFC9; 
+}
+.contact-adress{
+    font-family:Montserrat;
+    font-size:18px;
+    color:#BDBFC9; 
+}
+/* .icons-footer{
+    background-color:#2D2D2D;
+    background-size:cover;
+}
+.icon{
+    color:#E6E7E8;
+} */
+/* .copyright{
+    color:#E6E7E8;
+    display:flex;
+    justify-content:space-between;
+    align-items:end
+} */
+.icon{
+    color:#E6E7E8;
+}
+.sub-footer-section{
+    background-color: #2D2D2D;
+    padding: 10px 0px 10px 0px;
+}
+.copyrights{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+div .icon+.icon{
+    padding-left: 10px;
+}
+
+          
+           
+          
+          
+          
+         
+          
+         
+          
+        </style>
+
+        <body>
+          <header>
+           
+                <div class="navContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                            <a class="navbar-brand" href="#">
+                                <span class="navvmx-heading">VMX</span>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link1" href="#0">
+                                            <span>Products</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link2" href="#0">
+                                            <span>Services</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link3" href="#0">
+                                            <span>Case Study</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link4" href="#0">
+                                            <span>About Us</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link5" href="#0">
+                                            <span>Contact Us</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+            <div class="container banner-content">
+                        <p class="col-12 col-md-6 banner-title">65% IT Leaders have already accelerated cloud adaptation, runnung more applications
+                            in public & private clouds.
+                        </p>
+                        <h1 class="col-12 col-md-6 banner-subtitle">WEB WORKS VMX CLOUD ENGINEERING PLATFORM</h1>
+                        <div class="col-12">
+                            <button type="button" class="banner-btn">Learn More</button>
+                        </div>
+                      </div>
+                    </div>
+        </header>
+
+
+        <section class="links-tabs mt-3">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-lg-4">
+                      <ul class="nav nav-tabs">
+                          <li class="nav-item ">
+                              <a class="nav-link active" data-toggle="tab" href="#home">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="manage.png"  class="infra-image pr-2">
+                                     Manage Your Business IT Infrastructure like a PRO
+                                     <i class="icon-keyboard_arrow_right"></i>
+                                     
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu1">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="ecosystem.png"  class="infra-image pr-2">
+                                       Rich Interconnection Ecosystem
+                                       <i class="icon-keyboard_arrow_right"></i>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu2">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="migration.png"  class="infra-image pr-2">
+                                      Experience Ease of Migration
+                                      <i class="icon-keyboard_arrow_right"></i>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu3">
+                                  <div class="d-flex align-items-center linkBox">
+                                      <img src="services.png"  class="infra-image pr-2">
+                                      World-class Colocation Services
+                                      <i class="icon-keyboard_arrow_right"></i>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu4">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="unlock.png"  class="infra-image pr-2">
+                                      Unlock The Best Of Compliance Programs
+                                      <i class="icon-keyboard_arrow_right"></i>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu5">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="cloud.png"   class="infra-image pr-2">
+                                       Effortlessly Manage Clouds
+                                       <i class="icon-keyboard_arrow_right"></i>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu6">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="infra.png" class="infra-image pr-2">
+                                       Stay In Sync With Hyperconverged Infrastructure
+                                       <i class="icon-keyboard_arrow_right"></i>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-between align-items-center">
+                              <a class="nav-link" data-toggle="tab" href="#menu7">
+                                  <div class="d-flex align-items-center Box">
+                                      <img src="speaker.png"  class="infra-image pr-2">
+                                       Unconditional Support
+                                       <i class="icon-keyboard_arrow_right pr-2"></i>
+                                  </div>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-12 col-lg-8  pl-3 ">
+                      <div class="tab-content">
+                          <div class="tab-pane container-fluid active" id="home">
+                              <h1 class="tab-heading">Manage Your Business IT 
+                                  Infrastructure like a PRO</h1>
+                                  <p class="tab-paragraph">Set yourself free from the cost of IT legacy, challenges, and complexities while you house, protect and connect your company’s critical IT infrastructure and integrate all storage, compute, and other networking assets to run any app.</p>
+                                  <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu1">
+                              <h1 class="tab-heading">Rich Interconnection Ecosystem</h1>
+                                  <p class="tab-paragraph">Living things in an area are components of interconnected systems based on cyclical feedback, which maintains a delicate balance between themselves, other species, and the non-living components of their environment. Hence, this feedback system is the ecosystem.</p>
+                                  <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu2">
+                              <h1 class="tab-heading"> Experience Ease of Migration</h1>
+                                  <p class="tab-paragraph">Migration helps in improving the quality of life of people. It helps to improve social life of people as they learn about new culture, customs, and languages which helps to improve brotherhood among people. Migration of skilled workers leads to a greater economic growth of the region.</p>
+                                  <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu3">
+                              <h1 class="tab-heading"> World-class Colocation Services</h1>
+                              <p class="tab-paragraph">colocation services include the building in which everything is housed, as well as networking, physical security, redundant power and redundant cooling components, which then support the servers and storage provided by the customer.</p>
+                              <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu4">
+                              <h1 class="tab-heading"> Unlock The Best Of Compliance Programs</h1>
+                              <p class="tab-paragraph">Operating in accordance with applicable laws and regulations. Creating a culture of honesty and integrity. Meeting high ethical and professional standards. Preventing fraud and abuse and other compliance issues.</p>
+                              <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu5">
+                              <h1 class="tab-heading"> Effortlessly Manage Clouds</h1>
+                              <p class="tab-paragraph">Cloud based CRM is a customer relationship management system that depends more on an internet connection than on downloading software on-premise, that is, it is a cloud computing set up. Cloud based customer relationship management is much more popular than on-site SaaS these days. It’s easier to set up and learn how to use, and requires very little-to-no servicing. When going through cloud based CRM examples, be sure that the vendor does regular fixes and updates.</p>
+                              <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu6">
+                              <h1 class="tab-heading">Stay In Sync With Hyperconverged Infrastructure</h1>
+                              <p class="tab-paragraph">Benefits of hyper-converged infrastructure include simplified deployments and management, easy upgrades, scalability and flexibility, improved performance, agility and more.</p>
+                              <img src="infrasture.png" class="img-fluid">
+                          </div>
+                          <div class="tab-pane container-fluid fade" id="menu7">
+                              <h1 class="tab-heading"> Unconditional Support</h1>
+                              <p class="tab-paragraph">unconditional is without limits or reservations. An example of unconditional used as an adjective is in the phrase "unconditional love," which means love that never fails no matter what happens.</p>
+                              <img src="infrasture.png" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              
+          </div>
+          
+      
+      </section>
+      
+           
+          
+            <section class="card-section2">
+               
+              <h1 class="count-head text-center mt-5 p-3">Why Count on WW  VMX</h1>
+              <div class="container">
+                <div class="row">
+                  <div class=" col-xl-6 col-md-6">
+                     <div class="d-flex flex-row">
+              <div class="card shadow mb-3  d-flex flex-row  ">
+            <img src="Group 2434.png" alt="tree" class="imagetags p-3 ">
+              <div>
+              <h4 class="card-heading p-3 ">Next-Gen Innovation</h4>
+              <p class="card-paragraph ">We leverage cutting-edge technologies that merge global innovations with local offerings in the long run</p>
+            </div> 
+          </div>
+          </div>
+        </div>
+
+
+
+
+           <div class=" col-lg-6 col-md-6">
+                     <div class="d-flex flex-row"> 
+              <div class="card shadow mb-3  d-flex flex-row box-shadow ">
+            <img src="Group 2407.png" alt="tree" class="imagetags p-3 ">
+              <div>
+              <h4 class="card-heading p-3 ">Full Stack Data Center Soln</h4>
+              <p class="card-paragraph ">Explore a comprehensive range of data center & ICT solutions backed by cloud infrastructure, security solutions, and managed networks. </p>
+            </div> 
+          </div>
+          </div>
+        </div>
+         
+
+
+          <div class=" col-lg-6 col-md-6 ">
+            <div class="d-flex flex-row"> 
+       <div class="card shadow mb-3  d-flex flex-row "> 
+    <img src="Group 2435.png" alt="tree" class="imagetags p-3 ">
+      <div>
+      <h4 class="card-heading p-3 ">#1 Cloud Service Provider</h4>
+      <p class="card-paragraph "><b>WW VMX</b> has assisted global businesses to transform their digital journey while they connect, analyze, protect, and act on all sorts of data, right from edge to cloud.</p>
+    </div> 
+  </div>
+  </div>
+</div>
+ 
+
+
+  <div class=" col-lg-6 col-md-6">
+    <div class="d-flex flex-row"> 
+<div class="card shadow mb-3  d-flex flex-row ">
+<img src="Group 2437.png " alt="tree" class="imagetags p-3">
+<div>
+<h4 class="card-heading p-3 ">Decades of Expertise</h4>
+<p class="card-paragraph ">WW VMX holds more than two decades of industrial experience with 3 data centers in India and 6 worldwide POPs.</p>
+</div> 
+</div>
+</div>
+</div>
+
+
+
+
+<div class=" col-lg-6 col-md-6">
+  <div class="d-flex flex-row"> 
+<div class="card shadow mb-3  d-flex flex-row "> 
+<img src="Group 2439.png" alt="tree" class="imagetags p-3">
+<div>
+<h4 class="card-heading p-3 ">Customized Solutions</h4>
+<p class="card-paragraph ">We emphasize delivering a superior user experience backed by a plethora of customized solutions no matter how diverse or complex the customer business is</p>
+</div> 
+</div>
+</div>
+</div>
+
+
+
+<div class=" col-lg-6 col-md-6">
+<div class="d-flex flex-row"> 
+<div class="card shadow mb-3  d-flex flex-row ">
+<img src="Group 2443.png" alt="tree" class="imagetags p-3">
+<div>
+<h4 class="card-heading p-3 ">World-Class Support</h4>
+<p class="card-paragraph ">No matter your business is a startup, SMB, leading enterprise, or a global leader, our dexterous team of industry experts holds immense experience and market exposure to take your HCI hyper converged infrastructure to new heights. </p>
+</div> 
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+    </section>
+
+    <section class="biggerpic-section ">
+        <h1 class="biggerpicture-heading text-center">The Bigger Picture</h1>
+        <div class="container">
+            <div class="row">
+                
+             <div class="col-12  col-lg-8 col-md-8 ">
+              
+                    
+                  
+                    <div class="bigger-card shadow d-flex flex-column  m-3">
+                        <!-- <button class="number"> -->
+                            <span class="number-txt pr-5 mr-3">3</span>
+                        <!-- </button> -->
+                        <h4 class="biggertitle text-center pr-5">WW Tier ||| Data Centers</h4> 
+                </div>
+                    <!-- <small class="biggersubtitle">Data Centers</small> -->
+    
+                    </div>
+    
+    
+    
+               
+    
+    
+                <div class="col-12  col-lg-8 col-md-8">
+                             
+                    <div class="bigger-card shadow d-flex flex-column ml-5 m-5">
+                        <!-- <button class="number"> -->
+                            <span class="number-txt pr-5 mr-3">15+</span>
+                        <!-- </button> -->
+                        <h4 class="biggertitle text-center pr-6">Iron Mountains
+                            Data Centers</h4> 
+                </div>
+                    <!-- <small class="biggersubtitle">Data Centers</small> -->
+    
+                   </div>
+    
+    
+    
+                
+        
+    
+    
+                 <div class="picturecard col-12 col-lg-4  col-md-4 mt-5 ">
+                    <h1 class="picturehead2">Know the Bigger Picture</h1>
+                    <p class="picturepara">We care about our customers and hence try to provide all the resources and technology so that the needs and problems of the Customer can be resolved. The Future of this company beholds More Data Centers and
+                        technological advancements.</p>
+                </div>
+    
+           </div>
+              
+        </div>
+    </section>
+    
+    
+    
+        <section class="container-fluid speed-card ">
+            <div class="row">
+                <div class="col-lg-12"> 
+                   
+             <div class="speed-textpart">   
+            <h1 class="speed-heading pr-5 m-4 text-center  ">Speed Up Business Agility And Modernize Your 
+                Apps With A Next-Gen Cloud Approach</h1>
+                <button class="btn-book ">Book a Free Consulation Today</button>
+                
+            </div>
+    
+                </div>
+            </div>
+        
+       
+    </section>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+            <footer>
+              <footer class="footer-section ">
+                  <div class="footer-part pt-5">
+              <div class="container">
+                  <div class="row">
+
+
+                      <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+                          <h4 class="footer-title1 pb-5">VMX</h4>
+                                                   
+                      </div>
+
+
+
+                     <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+                         <h4 class="footer-title pb-5">PRODUCTS</h4>
+                         <p class="footer-para">VMX Infinite<a href="#" class="contact-adress">:Hosted Private Cloud</a></p>
+                         <p class="footer-para">VMX-DR<a href="#" class="contact-adress">:Disaster Recovery-as-a-Service</a></p>
+                         <address class="address">Public Cloud as a Service<br>
+                         Connected Bare<br>
+                         Motals</address>
+                        
+                     </div>
+              
+                     <div class="col-lg-3 col-md-3 col-sm-6 mb-3 pb-5">
+                         <h4 class="footer-title pb-5">LINKS</h4>
+                         <ul class="list-container">
+                          <li><a class="links" href="#">Services</a></li>
+                          <li><a href="#" class="links">Case Study</a></li>
+                          <li><a href="#" class="links">About us</a></li>
+                          <li><a href="#" class="links">Contacts</a></li>
+                        
+           
+                      </ul>
+                         
+                     </div>
+              
+                     <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+                         <h4 class="footer-title pb-5">CONTACTS</h4>
+                         <p class="contacts-para">Feel free get in touch us via phone or send us a message</p><br>
+
+                         <a href="#" class="contact-adress">+1234 567 89 10</a>
+                         <a href="#" class="contact-adress">Support@VITIX.COM</a>
+
+              
+                     </div>
+              
+                     
+              
+              </div>
+              </div>
+</footer>
+
+
+          <footer>
+              <div class="sub-footer-section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-9">
+                      <a href="#0" class="icon icon-facebook"></a>
+                      <a href="#0"><i class="icon icon-twitter"></i></a>
+                      <a href="#0"><i class="icon icon-linkedin"></i></a>
+                                           
+                  </div>
+                  <div class="col-xl-3">
+                    <span class="copyrights">&copy; 2021 VMX. All rights reserved</span>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </footer>
+
+
+
+
+
+
+
+</body>
+</html>
